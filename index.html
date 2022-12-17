@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Water Intake Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Daily Water Intake Tracker</h1>
+
+        <div>
+            <h3 id="total">0</h3>
+
+        </div>
+        <div>
+            <button id="add-btn" onclick="increment()">Add Glass</button>
+        </div>
+        <div>
+            <button id="remove-btn" onclick="decrement()">Remove Glass</button>
+        </div>
+        <div>
+            <button id="dayover-btn" onclick="save()">Day Over</button>
+        </div>
+        <div>
+            <button id="resetBtn" onClick="reset()">Reset</button>
+        </div>
+
+        <p id="total-intake">Today's Daily Intake: </p>
+        <div class="previous-days">
+            <div id="save-el"></div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
